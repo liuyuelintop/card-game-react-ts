@@ -5,7 +5,7 @@ import Home from "./pages/Home";
 // import CardArena from './pages/CardArena';
 import PokerGame from "./pages/PokerGame";
 import NavBar from "./components/Navbar";
-// import NotFound from './pages/NotFound';
+import NotFound from "./pages/NotFound";
 
 const App: React.FC = () => {
   return (
@@ -14,9 +14,9 @@ const App: React.FC = () => {
       <NavBar />
       <Routes>
         <Route path="/" element={<Home />} />
-        {/* <Route path="/card-arena" element={<CardArena />} /> */}
+        <Route path="/card-arena" element={<NotFound />} />
         <Route path="/poker-game" element={<PokerGame />} />
-        {/* <Route path="*" element={<NotFound />} /> */}
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </Router>
     // </DeckProvider>
