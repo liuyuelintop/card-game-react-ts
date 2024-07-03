@@ -36,7 +36,7 @@ const PokerGame: React.FC = () => {
         handleDealCards={handleDealCards}
         handleFlipAll={handleFlipAllPlayers}
       />
-      <div className="flex flex-wrap justify-center mt-4 w-full">
+      <div className="flex flex-wrap justify-center mt-4 sm:mt-8 w-full">
         {players.map((player, playerIndex) => (
           <div
             key={player.id}
