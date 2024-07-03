@@ -21,7 +21,7 @@ const PokerCard: React.FC<PokerCardProps> = ({
 }) => {
   return (
     <div
-      className={`relative border rounded-lg w-20 h-28 flex flex-col justify-center items-center m-2 shadow-lg transform hover:scale-105 transition duration-300 cursor-pointer ${
+      className={`relative border rounded-lg w-16 h-24 md:w-20 md:h-28 flex flex-col justify-center items-center m-2 shadow-lg transform hover:scale-105 transition duration-300 cursor-pointer ${
         isFlipped ? "bg-white" : "bg-gradient-to-r from-blue-400 to-purple-500"
       } ${className}`}
       onClick={onFlip}
