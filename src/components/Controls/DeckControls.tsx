@@ -35,7 +35,7 @@ const DeckControls: React.FC<DeckControlsProps> = ({
 }) => {
   return (
     <div className="max-w-screen-md mx-auto p-4 bg-gray-800 text-white rounded-lg shadow-lg flex flex-col space-y-4">
-      <div className="flex flex-wrap space-x-4 items-center">
+      <div className="flex flex-wrap justify-between gap-4 items-center">
         <SelectControl
           label="Min Mark"
           value={minMark}
@@ -57,34 +57,34 @@ const DeckControls: React.FC<DeckControlsProps> = ({
           onChange={setIncludeJokers}
         />
       </div>
-      <div className="flex flex-wrap space-x-4">
+      <div className="flex justify-between sm:justify-normal flex-wrap gap-4">
         <NumberInputControl
-          label="Players"
+          label="Players Number"
           value={playerCount}
           min={1}
           onChange={setPlayerCount}
-          className="w-24"
+          className="w-40"
         />
         <NumberInputControl
-          label="Cards/Player"
+          label="Cards Per Player"
           value={cardsPerPlayer}
           min={1}
           onChange={setCardsPerPlayer}
-          className="w-24"
+          className="w-40"
         />
       </div>
-      <div className="flex space-x-4">
-        <button
-          onClick={handleFlipAll}
-          className="px-3 py-2 bg-green-500 text-white rounded-lg hover:bg-green-700 transition text-sm"
-        >
-          Flip All
-        </button>
+      <div className="flex justify-center sm:justify-normal space-x-4">
         <button
           onClick={handleDealCards}
-          className="px-3 py-2 bg-yellow-500 text-white rounded-lg hover:bg-yellow-700 transition text-sm"
+          className="w-40 px-3 py-2 bg-green-500 text-white rounded-lg hover:bg-green-700 transition text-sm"
         >
           Deal Cards
+        </button>
+        <button
+          onClick={handleFlipAll}
+          className="w-40 px-3 py-2 bg-yellow-500 text-white rounded-lg hover:bg-yellow-700 transition text-sm"
+        >
+          Flip All
         </button>
       </div>
     </div>

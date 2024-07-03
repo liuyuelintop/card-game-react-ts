@@ -16,7 +16,7 @@ const SelectControl: React.FC<SelectControlProps> = ({
   onChange,
 }) => {
   return (
-    <div className={`flex flex-col space-y-2${className}`}>
+    <div className={`flex flex-col space-y-2 ${className}`}>
       <label className="text-white">{label}</label>
       <select
         className="p-2 rounded bg-gray-700 text-white"
