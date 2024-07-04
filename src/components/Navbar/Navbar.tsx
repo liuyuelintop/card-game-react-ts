@@ -60,12 +60,6 @@ const Navbar: React.FC = () => {
               Home
             </Link>
             <Link
-              to="/card-arena"
-              className="block mt-4 lg:mt-0 text-white lg:inline-block"
-            >
-              Card Arena
-            </Link>
-            <Link
               to="/poker-game"
               className="block mt-4 lg:mt-0 text-white lg:inline-block"
             >
