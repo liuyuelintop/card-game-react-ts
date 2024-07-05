@@ -20,8 +20,8 @@ const PokerGame: React.FC = () => {
   } = usePlayerHands(playerCount, cardsPerPlayer, includeJokers);
 
   return (
-    <div className="mx-auto items-center flex flex-col flex-wrap p-4">
-      <h1 className="text-2xl lg:text-4xl mb-4 text-center">Poker Game</h1>
+    <div className="min-h-svh mx-auto bg-green-200 items-center flex flex-col flex-wrap gap-10 p-4">
+      <h1 className="text-2xl lg:text-4xl text-center">Poker Game</h1>
       <DeckControls
         minMark={minMark}
         maxMark={maxMark}
